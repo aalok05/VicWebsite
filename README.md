@@ -1,5 +1,5 @@
 # VicWebsite
-This project is a website made in Laravel for a college incubation center.
+This project is a website made in Laravel for an Incubation Center.
 
 ## Features
 * Submit Ideas
