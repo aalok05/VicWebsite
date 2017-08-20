@@ -71,10 +71,6 @@
 		      </div>
 		  </div>
     </div>
-	
-	
-		
-
 		<div id="wrap" class="boxed ">
 			<div class="grey-bg"> <!-- Grey BG  -->	
 				
@@ -394,7 +390,7 @@
              <div class="row">
 
              
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
 
        
         <img src="images/partners/mentors/1.png" class="img-responsive" width="200px"  alt="Image">
@@ -408,7 +404,7 @@
             
         </p>
       </div>
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
 
         <img src="images/partners/mentors/2.png" class="img-responsive" width="200px"  alt="Image">
         <p><br><b>Dr. Aristodemos Pnevmatikakis</b><br>
@@ -421,7 +417,7 @@
             
         </p>
       </div>
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
 
         <img src="images/partners/mentors/3.png" class="img-responsive" width="200px"  alt="Image">
         <p><br><b>Dr. Dimitrios Ntaikos</b><br>
@@ -433,7 +429,7 @@
             
           </p>
       </div>
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
 
         <img src="images/partners/mentors/4.png" class="img-responsive" width="200px"  alt="Image">
         <p><br><b>Dr. George Papageorgiou</b><br>
@@ -447,7 +443,7 @@
             
           </p>
       </div>
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
 
         <img src="images/partners/mentors/5.png" class="img-responsive" width="200px"   alt="Image">
         <p><br><b>Dr. Gregory Yovanof</b><br>
@@ -456,11 +452,11 @@
             <b>Athens</b><br>
             Information Technology (AIT), Greece
             
-            Over twenty-year R&D and Business Development experience in the areas of: Design of communication systems, and Production of Multimedia ASIC chips. Areas of expertise: Broadband wireless communications; Design of multimedia systems; Applications of information theory; Commercialization of technological innovations. Business Development experience with hi-tech companies from the greater Pacific Rim region. Exposed to the structured environment of a big corporation as well as the creative chaos of a start-up. Member of an executive team that succeeded in raising VC funds to launch a company in Silicon Valley. Associate Dean at AIT, Head of the Broadband Wireless and Sensor Networks R&D group at AIT, and the Academic Director of a M.Sc. program in the Management of Innovation.
+            Over twenty-year R&D and Business Development experience in the areas of: Design of communication systems, and Production of Multimedia ASIC chips. Areas of expertise: Broadband wireless communications; Design of multimedia systems; Applications of information theory; Commercialization of technological innovations. Business Development experience with hi-tech companies from the greater Pacific Rim region. Exposed to the structured environment of a big corporation as well as the creative chaos of a start-up. Member of an executive team that succeeded in raising VC funds to launch a company in Silicon Valley
             
           </p>
       </div>
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
 
           <img src="images/partners/mentors/6.png" class="img-responsive" width="200px"   alt="Image">
           <p><br><b>Dr. Faidon Komisopoulos</b><br>
@@ -472,11 +468,11 @@
               Studied Business Administration and Computer Science. Obtained his MBA from “Haute Ecole Groupe ICHEC - ISC St Louis”. His PHD thesis was on “Creation of a Model for Estimating and Managing an Organization’s Capability to Innovate, using the Innovation Management Techniques” (University of Piraeus 2011). 
               
               Right now, he is lecturing on “Managing Information Systems”, “Strategic management” and “Innovation and Entrepreneurship” in several Universities and Colleges. 
-              He has published more than 10 Papers and Publications over the 4 past years. A lot of research activities, consulting, and adult training programmes. Former commercial director in multinational company with adequate managerial experience.
+              He has published more than 10 Papers and Publications over the 4 past years.
               
             </p>
       </div>
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
 
           <img src="images/partners/mentors/7.png" class="img-responsive"  width="200px"  alt="Image">
           <p><br><b>Mr. Maruti Pawar</b><br>
@@ -489,7 +485,7 @@
               
             </p>
       </div>
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
 
           <img src="images/partners/mentors/8.png" class="img-responsive" width="200px"  alt="Image">
           <p><br><b>Mr. Krishna Sirohi</b><br>
@@ -501,7 +497,7 @@
               
             </p>
       </div>
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
 
           <img src="images/partners/mentors/9.png" class="img-responsive"  width="200px"  alt="Image">
           <p><br><b>Mauro De Sanctis</b><br>
@@ -512,7 +508,7 @@
               
             </p>
       </div>
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;" >
 
           <img src="images/partners/mentors/10.png" class="img-responsive" width="200px"  alt="Image">
           <p><br><b>Viktor Yeshchenko </b><br>
