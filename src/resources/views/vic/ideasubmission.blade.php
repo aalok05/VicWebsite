@@ -248,6 +248,100 @@
                      @if (Auth::user())
                       <input type="hidden"  name="user_id" value= {{ Auth::user()->id }} />
                     @endif
+
+                    <div class="control-group">
+		                      <div class="controls">
+                                    Name of Applicant: 
+                                   {!! Form::text('Name', null, array('placeholder' => 'Name','class' => 'form-control')) !!}
+                                 
+		                        </div>
+		                 </div>
+                     <div class="control-group">
+		                      <div class="controls">
+                                    Education: 
+                                   {!! Form::text('Education', null, array('placeholder' => 'Education','class' => 'form-control')) !!}
+                                 
+		                        </div>
+		                 </div> 
+
+                     <div class="control-group">
+		                      <div class="controls">
+                                    Father's Name: 
+                                   {!! Form::text('', null, array('placeholder' => '','class' => 'form-control')) !!}
+                                 
+		                        </div>
+		                 </div> 
+
+                     <div class="control-group">
+		                      <div class="controls">
+                                    Mother's Name: 
+                                   {!! Form::text('', null, array('placeholder' => '','class' => 'form-control')) !!}
+                                 
+		                        </div>
+		                 </div>
+
+                     <div class="control-group">
+		                      <div class="controls">
+                                    Address: 
+                                   {!! Form::text('Address', null, array('placeholder' => 'Address','class' => 'form-control')) !!}
+                                 
+		                        </div>
+		                 </div>
+
+                     <div class="control-group">
+		                      <div class="controls">
+                                    Pincode: 
+                                   {!! Form::text('Pincode', null, array('placeholder' => 'Pincode','class' => 'form-control')) !!}
+                                 
+		                        </div>
+		                 </div>
+
+                     <div class="control-group">
+		                      <div class="controls">
+                                    Mobile: 
+                                   {!! Form::text('Mobile', null, array('placeholder' => 'Mobile','class' => 'form-control')) !!}
+                                 
+		                        </div>
+		                 </div>
+
+                     <div class="control-group">
+		                      <div class="controls">
+                                    Age: 
+                                   {!! Form::text('Age', null, array('placeholder' => 'Age','class' => 'form-control')) !!}
+                                 
+		                        </div>
+		                 </div>
+                     <div class="control-group">
+		                      <div class="controls">
+                                    Date of Birth: 
+                                   {!! Form::text('Date of Birth', null, array('placeholder' => 'Date of Birth','class' => 'form-control')) !!}
+                                 
+		                        </div>
+		                 </div>
+                     <div class="control-group">
+		                      <div class="controls">
+                                    Sex: 
+                                   {!! Form::text('Sex', null, array('placeholder' => 'Sex','class' => 'form-control')) !!}
+                                 
+		                        </div>
+		                 </div>
+
+                     <div class="control-group">
+		                      <div class="controls">
+                                    Nationality: 
+                                   {!! Form::text('Nationality', null, array('placeholder' => 'Nationality','class' => 'form-control')) !!}
+                                 
+		                        </div>
+		                 </div>
+
+                     <div class="control-group">
+		                      <div class="controls">
+                                    How do you expect support from me?: 
+                                   {!! Form::text('support', null, array('placeholder' => 'support','class' => 'form-control')) !!}
+                                 
+		                        </div>
+		                 </div>
+
                         <div class="control-group{{ $errors->has('college') ? ' has-error' : ''}} ">
 		                      <div class="controls">
                                     College: 
@@ -276,7 +370,7 @@
 
                   <div class="control-group{{ $errors->has('body') ? ' has-error' : '' }}">
 		                     <div class="controls">
-                                 Idea :   {!! Form::textarea('body', null, array('placeholder' => 'Idea','class' => 'form-control')) !!}
+                                What's the basic Idea ?   {!! Form::textarea('body', null, array('placeholder' => 'Idea','class' => 'form-control')) !!}
 					              @if ($errors->has('body'))
                                       <span class="help-block">
                                            <strong>{{ $errors->first('body') }}</strong>
@@ -284,6 +378,13 @@
                                  @endif    
 		                     </div>
 		                </div> 	
+                    <div class="control-group">
+		                      <div class="controls">
+                                    Challenges and Competitors: 
+                                    {!! Form::textarea('body', null, array('placeholder' => 'Challenges and Competitors','class' => 'form-control')) !!}
+                                 
+		                        </div>
+		                 </div>
    
                           <div class="submit-btn">
 							
