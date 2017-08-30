@@ -3,39 +3,39 @@
 @section('content')
 
 	
-	<div class="container">     
-         
-		 <div class="modal fade login" id="loginModal">
-		      <div class="modal-dialog login animated">
-    		      <div class="modal-content">
-    		         <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Login with</h4>
-                    </div>
-                    <div class="modal-body">  
-                        <div class="box">
-                             <div class="content">
-                                <div class="social">
+	<div class="container">       
+ <!--Login and Registration Start-->        
+	<div class="modal fade login" id="loginModal">
+		<div class="modal-dialog login animated">
+    	    <div class="modal-content">
+    		    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Login with</h4>
+                </div>
+                 <div class="modal-body">  
+                    <div class="box">
+                        <div class="content">
+                            <div class="social">
    
-                                    <a id="google_login" class="circle google" href="{{ url('/auth/google') }}">
-                                        <i class="fa fa-google-plus fa-fw"></i>
-                                    </a>
-                                    <a id="facebook_login" class="circle facebook" href="{{ url('/auth/facebook') }}">
-                                        <i class="fa fa-facebook fa-fw"></i>
-                                    </a>
-                                </div>
-                                <div class="division">
-                                    <div class="line l"></div>
-                                      <span>or</span>
-                                    <div class="line r"></div>
-                                </div>
-                                <div class="error"></div>
+                                <a id="google_login" class="circle google" href="{{ url('/auth/google') }}">
+                                   <i class="fa fa-google-plus fa-fw"></i>
+                                </a>
+                                <a id="facebook_login" class="circle facebook" href="{{ url('/auth/facebook') }}">
+                                    <i class="fa fa-facebook fa-fw"></i>
+                                </a>
+                            </div>
+                            <div class="division">
+                                <div class="line l"></div>
+                                    <span>or</span>
+                                <div class="line r"></div>
+                            </div>
+                            <div class="error"></div>
                                 <div class="form loginBox">
                                     <form method="post" action="{{ route('login') }}" accept-charset="UTF-8">
-                                     {{ csrf_field() }}
-									<input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                                    <input class="btn btn-default btn-login" type="submit" value="Login">
+                                       {{ csrf_field() }}
+									   <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                       <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                                       <input class="btn btn-default btn-login" type="submit" value="Login" >
 									
                                     </form>
                                 </div>
@@ -43,15 +43,15 @@
                         </div>
                         <div class="box">
                             <div class="content registerBox" style="display:none;">
-                             <div class="form">
-                                <form method="post" html="{:multipart=>true}" data-remote="true" action="{{ route('register') }}" accept-charset="UTF-8">
-                                   {{ csrf_field() }}
-								<input id="name" class="form-control" type="text" placeholder="Name" name="name">
-                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                                <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
-                                <input class="btn btn-default btn-register" type="submit" value="Create account" name="commit">
-                                </form>
+                               <div class="form">
+                                   <form method="post" html="{:multipart=>true}" data-remote="true" action="{{ route('register') }}" accept-charset="UTF-8">
+                                        {{ csrf_field() }}
+								        <input id="name" class="form-control" type="text" placeholder="Name" name="name">
+                                        <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                        <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                                        <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                                        <input class="btn btn-default btn-register" type="submit" value="Create account"  name="commit">
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -67,10 +67,12 @@
                              <a href="javascript: showLoginForm();">Login</a>
                         </div>
                     </div>        
-    		      </div>
-		      </div>
-		  </div>
+    		    </div>
+		    </div>
+		</div>
     </div>
+	
+	<!--Login and Registration Ends-->
 		<div id="wrap" class="boxed ">
 			<div class="grey-bg"> <!-- Grey BG  -->	
 				
@@ -389,146 +391,443 @@
             
              <div class="row">
 
+<!--Mentor Modal 1 Starts -->
              
-      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
+      <div class="col-sm-6 col-md-4" style="width: 370px;height:400px;display: inline-block;">
 
-       
-        <img src="images/partners/mentors/1.png" class="img-responsive" width="200px"  alt="Image">
-        <p><br><b>Dr. Constantinos B. Papadias</b><br>
-        <b>Dean</b><br>
-        
+       <div class="container">
+  <!-- Trigger the modal with a button -->
+ 
+ <a href="#" data-toggle="modal" data-target="#myModal1">
+ <img src="images/partners/mentors/1.png" class="img-responsive" width="200px"  alt="Image">
+          <p><br><b>Dr. Constantinos B. Papadias</b><br>
+           <b>Dean</b><br>
             <b>Athens</b> <br>
             Information Technology (AIT), in Athens, Greece
-            
+</a>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+        <center><img src="images/partners/mentors/1.png" class="img-responsive" width="200px"  alt="Image"> </center>
+          <p><br><b>Dr. Constantinos B. Papadias</b>
+           <b>Dean</b><br>
+            <b>Athens</b> <br>
+            Information Technology (AIT), in Athens, Greece
+        </div>
+        <div class="modal-body">
+           
             Professor and Head of its Broadband Wireless and Sensor Networks (B-WiSE) Research Group. He is also Adjunct Professor at Aalborg University. He has published over 180 papers and 3 books and has received over 7000 citations for his work. He has also made standards  contributions and holds 12 patents. He was a Distinguished Lecturer of the IEEE Communications Society for 2012-2013 and is a Fellow of IEEE.
             
-        </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
-      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
+      
+    </div>
+  </div>
+  
+</div>
+</div>
 
-        <img src="images/partners/mentors/2.png" class="img-responsive" width="200px"  alt="Image">
-        <p><br><b>Dr. Aristodemos Pnevmatikakis</b><br>
+ <!--Mentor Modal 1 Ends-->   
+
+<!--Mentor Modal 2 Starts-->
+             
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 400px;display: inline-block;">
+
+       <div class="container">
+  <!-- Trigger the modal with a button -->
+ 
+ <a href="#" data-toggle="modal" data-target="#myModal2">
+    <img src="images/partners/mentors/2.png" class="img-responsive" width="200px"  alt="Image">
+         <p><br><b>Dr. Aristodemos Pnevmatikakis</b><br>
         <b>Associate professor</b><br>
-        
             <b>Athens</b> <br>
             Information Technology (AIT), in Athens, Greece
-            
+</a>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+              <center><img src="images/partners/mentors/2.png" class="img-responsive" width="200px"  alt="Image"> </center>
+          <p><br><b>Dr. Aristodemos Pnevmatikakis</b><br>
+        <b>Associate professor</b><br>
+            <b>Athens</b> <br>
+            Information Technology (AIT), in Athens, Greece
+        </div>
+        <div class="modal-body">
             With 20 years’ experience in Signal processing, his prime research interest is in systems for multimodal detection, tracking and identification, aiming at activity recognition in intelligent spaces. To this extend he utilises signals from cameras, microphones and wearable, environmental and domotics sensors. He is co-author of the books Audio-Visual Person Tracking: A Practical Approach (Imperial College Press, London, UK, Summer 2011) and Delta-Sigma Modulators, Modelling, Design and Applications (Imperial College Press, London, UK, 2003).
-            
-        </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
-      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+ <!--Mentor Modal 2 Ends--> 
 
-        <img src="images/partners/mentors/3.png" class="img-responsive" width="200px"  alt="Image">
+ <!--Mentor Modal 3 Starts-->
+             
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 400px;display: inline-block;">
+
+       <div class="container">
+  <!-- Trigger the modal with a button -->
+ 
+ <a href="#" data-toggle="modal" data-target="#myModal3">
+     <img src="images/partners/mentors/3.png" class="img-responsive" width="200px"  alt="Image">
         <p><br><b>Dr. Dimitrios Ntaikos</b><br>
         <b>Research Scientist </b><br>
         
             <b>Athens</b> <br>
-            Information Technology (AIT), in Athens, Greece              
-            Have done Research Commission of NTUA, contract on “MIMO technologies for satellite and stratospheric communications”. Α) Design process on MIMO systems for satellite and stratospheric communications. Β) Measurement of MIMO radio channels - Measurements' processing. Also, Research Commission of AUTH, measuring power density of electromagnetic radiation, and Research Commission of AUTH, contract on “Computer Applications for Satellite Communications II. Improved interactive wideband access through best convergence of services using DVB-RCS technology”etc.
+            Information Technology (AIT), in Athens, Greece    
+</a>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+              <center><img src="images/partners/mentors/3.png" class="img-responsive" width="200px"  alt="Image"> </center>
+        <p><br><b>Dr. Dimitrios Ntaikos</b><br>
+        <b>Research Scientist </b><br>
+        
+            <b>Athens</b> <br>
+            Information Technology (AIT), in Athens, Greece  
+        </div>
+        <div class="modal-body">
+        Have done Research Commission of NTUA, contract on “MIMO technologies for satellite and stratospheric communications”. Α) Design process on MIMO systems for satellite and stratospheric communications. Β) Measurement of MIMO radio channels - Measurements' processing. Also, Research Commission of AUTH, measuring power density of electromagnetic radiation, and Research Commission of AUTH, contract on “Computer Applications for Satellite Communications II. Improved interactive wideband access through best convergence of services using DVB-RCS technology”etc.
             
-          </p>
+           </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
-      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+ <!--Mentor Modal 3 Ends--> 
+ <!--Mentor Modal 4 Starts-->
+             
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 400px;display: inline-block;">
 
-        <img src="images/partners/mentors/4.png" class="img-responsive" width="200px"  alt="Image">
-        <p><br><b>Dr. George Papageorgiou</b><br>
+       <div class="container">
+  <!-- Trigger the modal with a button -->
+ 
+ <a href="#" data-toggle="modal" data-target="#myModal4">
+    <img src="images/partners/mentors/4.png" class="img-responsive" width="200px"  alt="Image">
+          <p><br><b>Dr. George Papageorgiou</b><br>
         <b>Research Scientist </b><br>
         
            <b>Athens</b> <br>
             Information Technology (AIT), Greece
             
-            George Papageorgiou received his BSc Degree in Applied Mathematics from the National and Technical University of Athens (SEMFE, NTUA) in 2007, the M.Sc. degree in Applied Mathematics in 2012 and his   Ph.D. degree in Informatics and Telecommunications in 2016 from the National and Kapodistrian University of Athens (UOA). His research interests include Sparse Optimization methods, Robust Algorithms, Machine Learning, Nonlinear Estimation, Adaptive and Distributed Learning, Wireless Communications and Information Theory. Has proposed several journal articles and peer-reviewed conference publications.
+</a>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+              <center><img src="images/partners/mentors/4.png" class="img-responsive" width="200px"  alt="Image"> </center>
+           <p><br><b>Dr. George Papageorgiou</b><br>
+        <b>Research Scientist </b><br>
+        
+           <b>Athens</b> <br>
+            Information Technology (AIT), Greece
             
-            
-          </p>
+        </div>
+        <div class="modal-body">
+              George Papageorgiou received his BSc Degree in Applied Mathematics from the National and Technical University of Athens (SEMFE, NTUA) in 2007, the M.Sc. degree in Applied Mathematics in 2012 and his   Ph.D. degree in Informatics and Telecommunications in 2016 from the National and Kapodistrian University of Athens (UOA). His research interests include Sparse Optimization methods, Robust Algorithms, Machine Learning, Nonlinear Estimation, Adaptive and Distributed Learning, Wireless Communications and Information Theory. Has proposed several journal articles and peer-reviewed conference publications.
+             </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
-      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+ <!--Mentor Modal 4 Ends--> 
+ <!--Mentor Modal 5 Starts-->
+             
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 400px;display: inline-block;">
 
-        <img src="images/partners/mentors/5.png" class="img-responsive" width="200px"   alt="Image">
-        <p><br><b>Dr. Gregory Yovanof</b><br>
+       <div class="container">
+  <!-- Trigger the modal with a button -->
+ 
+ <a href="#" data-toggle="modal" data-target="#myModal5">
+    <img src="images/partners/mentors/5.png" class="img-responsive" width="200px"  alt="Image">
+         <p><br><b>Dr. Gregory Yovanof</b><br>
         <b>Professor</b><br>
         
             <b>Athens</b><br>
             Information Technology (AIT), Greece
             
-            Over twenty-year R&D and Business Development experience in the areas of: Design of communication systems, and Production of Multimedia ASIC chips. Areas of expertise: Broadband wireless communications; Design of multimedia systems; Applications of information theory; Commercialization of technological innovations. Business Development experience with hi-tech companies from the greater Pacific Rim region. Exposed to the structured environment of a big corporation as well as the creative chaos of a start-up. Member of an executive team that succeeded in raising VC funds to launch a company in Silicon Valley
+</a>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+              <center><img src="images/partners/mentors/5.png" class="img-responsive" width="200px"  alt="Image"> </center>
+          <p><br><b>Dr. Gregory Yovanof</b><br>
+        <b>Professor</b><br>
+        
+            <b>Athens</b><br>
+            Information Technology (AIT), Greece
             
-          </p>
+        </div>
+        <div class="modal-body">
+           Over twenty-year R&D and Business Development experience in the areas of: Design of communication systems, and Production of Multimedia ASIC chips. Areas of expertise: Broadband wireless communications; Design of multimedia systems; Applications of information theory; Commercialization of technological innovations. Business Development experience with hi-tech companies from the greater Pacific Rim region. Exposed to the structured environment of a big corporation as well as the creative chaos of a start-up. Member of an executive team that succeeded in raising VC funds to launch a company in Silicon Valley
+             </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
-      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+ <!--Mentor Modal 5 Ends--> 
+ <!--Mentor Modal 6 Starts-->
+             
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 400px;display: inline-block;">
 
-          <img src="images/partners/mentors/6.png" class="img-responsive" width="200px"   alt="Image">
-          <p><br><b>Dr. Faidon Komisopoulos</b><br>
+       <div class="container">
+  <!-- Trigger the modal with a button -->
+ 
+ <a href="#" data-toggle="modal" data-target="#myModal6">
+    <img src="images/partners/mentors/6.png" class="img-responsive" width="200px"  alt="Image">
+            <p><br><b>Dr. Faidon Komisopoulos</b><br>
           <b>Senior Research Scientist </b><br>
           
               <b>Athens</b> <br>
               Information Technology (AIT), Greece
-              
-              Studied Business Administration and Computer Science. Obtained his MBA from “Haute Ecole Groupe ICHEC - ISC St Louis”. His PHD thesis was on “Creation of a Model for Estimating and Managing an Organization’s Capability to Innovate, using the Innovation Management Techniques” (University of Piraeus 2011). 
+</a>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal6" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+              <center><img src="images/partners/mentors/6.png" class="img-responsive" width="200px"  alt="Image"> </center>
+           <p><br><b>Dr. Faidon Komisopoulos</b><br>
+          <b>Senior Research Scientist </b><br>
+          
+              <b>Athens</b> <br>
+              Information Technology (AIT), Greece
+        </div>
+        <div class="modal-body">
+             Studied Business Administration and Computer Science. Obtained his MBA from “Haute Ecole Groupe ICHEC - ISC St Louis”. His PHD thesis was on “Creation of a Model for Estimating and Managing an Organization’s Capability to Innovate, using the Innovation Management Techniques” (University of Piraeus 2011). 
               
               Right now, he is lecturing on “Managing Information Systems”, “Strategic management” and “Innovation and Entrepreneurship” in several Universities and Colleges. 
               He has published more than 10 Papers and Publications over the 4 past years.
-              
-            </p>
+               </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
-      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+ <!--Mentor Modal 6 Ends--> 
 
-          <img src="images/partners/mentors/7.png" class="img-responsive"  width="200px"  alt="Image">
-          <p><br><b>Mr. Maruti Pawar</b><br>
+ <!--Mentor Modal 7 Starts-->
+             
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 400px;display: inline-block;">
+
+       <div class="container">
+  <!-- Trigger the modal with a button -->
+ 
+ <a href="#" data-toggle="modal" data-target="#myModal7">
+    <img src="images/partners/mentors/7.png" class="img-responsive" width="200px"  alt="Image">
+        <p><br><b>Mr. Maruti Pawar</b><br>
           <b>Promoter - Amptronics </b><br>
           
               <b>India</b> <br>
-              
-              Leading supplier & manufacturer of furnaces, gas mixing Stations, Automatic Argon Purging Systems, Ladles & Vessels and Fuel Extraction Systems such as FES Bags Houses and FES Panels. 
+</a>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal7" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+              <center><img src="images/partners/mentors/7.png" class="img-responsive" width="200px"  alt="Image"> </center>
+         <p><br><b>Mr. Maruti Pawar</b><br>
+          <b>Promoter - Amptronics </b><br>
+          
+              <b>India</b> <br>
+        </div>
+        <div class="modal-body">
+           Leading supplier & manufacturer of furnaces, gas mixing Stations, Automatic Argon Purging Systems, Ladles & Vessels and Fuel Extraction Systems such as FES Bags Houses and FES Panels. 
               Mentors Vishwaniketan students and staff in projects related to mechanical & electrical, related to metallurgy & machine design.
-              
-            </p>
+              </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
-      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+ <!--Mentor Modal 7 Ends--> 
+ <!--Mentor Modal 8 Starts-->
+             
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 400px;display: inline-block;">
 
-          <img src="images/partners/mentors/8.png" class="img-responsive" width="200px"  alt="Image">
-          <p><br><b>Mr. Krishna Sirohi</b><br>
+       <div class="container">
+  <!-- Trigger the modal with a button -->
+ 
+ <a href="#" data-toggle="modal" data-target="#myModal8">
+    <img src="images/partners/mentors/8.png" class="img-responsive" width="200px"  alt="Image">
+         <p><br><b>Dr. Aristodemos Pnevmatikakis</b><br>
+        <b>Associate professor</b><br>
+            <b>Athens</b> <br>
+            Information Technology (AIT), in Athens, Greece
+</a>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal8" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+              <center><img src="images/partners/mentors/8.png" class="img-responsive" width="200px"  alt="Image"> </center>
+        <p><br><b>Mr. Krishna Sirohi</b><br>
           <b>Founder & President – i2TB Research and Foundation,</b><br>
           
               <b>India</b><br>
-              
-              Short summary              
-              
-            </p>
+        </div>
+        <div class="modal-body">
+             Short summary      
+                  </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
-      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;">
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+ <!--Mentor Modal 8 Ends--> 
+ <!--Mentor Modal 9 Starts-->
+             
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 400px;display: inline-block;">
 
-          <img src="images/partners/mentors/9.png" class="img-responsive"  width="200px"  alt="Image">
-          <p><br><b>Mauro De Sanctis</b><br>
-          <b>Associate Editor – Space Electronics and Communications, IEEE Aerospace and Electronic Systems Magazine</b><br>
-          
-              <b>Denmark</b><br>
-              He is serving as Associate Editor for the Space Electronics and Communications area of the IEEE Aerospace and Electronic Systems Magazine. His main areas of interest are: wireless terrestrial and satellite communication networks, data mining and information theory. He co-authored more than 80 papers published on journals and conference proceedings. He was co-recipient of the best paper award from the 2009 International Conference on Advances in Satellite and Space Communications (SPACOMM 2009).
+       <div class="container">
+  <!-- Trigger the modal with a button -->
+ 
+ <a href="#" data-toggle="modal" data-target="#myModal9">
+    <img src="images/partners/mentors/9.png" class="img-responsive" width="200px"  alt="Image">
+         <p><br><b>Mauro De Sanctis</b><br>
+          <b>Associate Editor – Space Electronics and Communications, <br>IEEE Aerospace and Electronic Systems Magazine</b><br>
+</a>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal9" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+              <center><img src="images/partners/mentors/9.png" class="img-responsive" width="200px"  alt="Image"> </center>
+         <p><br><b>Mauro De Sanctis</b><br>
+          <b>Associate Editor – Space Electronics and Communications,
+          IEEE Aerospace and Electronic Systems Magazine</b><br>
+        </div>
+        <div class="modal-body">
+            He is serving as Associate Editor for the Space Electronics and Communications area of the IEEE Aerospace and Electronic Systems Magazine. His main areas of interest are: wireless terrestrial and satellite communication networks, data mining and information theory. He co-authored more than 80 papers published on journals and conference proceedings. He was co-recipient of the best paper award from the 2009 International Conference on Advances in Satellite and Space Communications (SPACOMM 2009).
               
-            </p>
+                 </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
-      <div class="col-sm-6 col-md-4" style="width: 370px;height: 700px;display: inline-block;" >
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+ <!--Mentor Modal 9 Ends--> 
+ <!--Mentor Modal 10 Starts-->
+             
+      <div class="col-sm-6 col-md-4" style="width: 370px;height: 400px;display: inline-block;">
 
-          <img src="images/partners/mentors/10.png" class="img-responsive" width="200px"  alt="Image">
+       <div class="container">
+  <!-- Trigger the modal with a button -->
+ 
+ <a href="#" data-toggle="modal" data-target="#myModal10">
+    <img src="images/partners/mentors/10.png" class="img-responsive" width="200px"  alt="Image">
           <p><br><b>Viktor Yeshchenko </b><br>
           <b>Engineer - Igor Sikorsky Kyiv Polytechnic Institute</b><br>
           
               <b>Kiev, Ukraine</b><br>
-
+</a>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal10" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+              <center><img src="images/partners/mentors/10.png" class="img-responsive" width="200px"  alt="Image"> </center>
+          <p><br><b>Viktor Yeshchenko </b><br>
+          <b>Engineer - Igor Sikorsky Kyiv Polytechnic Institute</b><br>
+          
+              <b>Kiev, Ukraine</b><br>
+        </div>
+        <div class="modal-body">
+        
               •	Worked in three scientific biomechanical projects in collaboration with academic staff from several medical institutions (including military hospital);
               •	Designed strength of biomechanical structures of lower limbs and jaw with isotropic/anisotropic/viscoelastic mechanical properties, various fractures, osteosynthesis systems and implants, under static and dynamic load conditions;
               •	Created methodical, algorithms and computer program (for calculating pressure values and forces using Fuji Prescale Pressure Film);
               Conducted complicated CAD modelling on basis of computer tomography scans of human   bones and FEA analyses of stress-strain state to study strength and reliability parameters of biomechanical systems
               
-              
-            </p>
+               </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
+      
+    </div>
   </div>
-  </div>
-
-  </div>
-
+  
+</div>
+</div>
+ <!--Mentor Modal 10 Ends--> 
+ 
   <div id="Subject Matter Experts" class="w3-container w3-border city" style="display:none">
 <br>        
               <div class="member col-md-4 col-sm-4">
@@ -630,7 +929,6 @@
       
       <!-- SLIDER REVOLUTION INIT  -->
 			<script type="text/javascript">
-
 				jQuery(document).ready(function() {
           if ( (navigator.appVersion.indexOf("Win")!=-1) && ( ieDetect == false ) ) {	
                     jQuery('#rs-fullscr').revolution(
@@ -672,12 +970,10 @@
                       navigationVAlign:"bottom",
                       navigationHOffset:0,
                       navigationVOffset:20,
-
                       soloArrowLeftHalign:"left",
                       soloArrowLeftValign:"center",
                       soloArrowLeftHOffset:20,
                       soloArrowLeftVOffset:0,
-
                       soloArrowRightHalign:"right",
                       soloArrowRightValign:"center",
                       soloArrowRightHOffset:20,
@@ -686,13 +982,11 @@
                       shadow:0,
                       fullWidth:"off",
                       fullScreen:"on",
-
                       spinner:"spinner4",
                       
                       stopLoop:"off",
                       stopAfterLoops:-1,
                       stopAtSlide:-1,
-
                       shuffle:"off",
                       
                       autoHeight:"off",						
@@ -748,12 +1042,10 @@
                       navigationVAlign:"bottom",
                       navigationHOffset:0,
                       navigationVOffset:20,
-
                       soloArrowLeftHalign:"left",
                       soloArrowLeftValign:"center",
                       soloArrowLeftHOffset:20,
                       soloArrowLeftVOffset:0,
-
                       soloArrowRightHalign:"right",
                       soloArrowRightValign:"center",
                       soloArrowRightHOffset:20,
@@ -762,13 +1054,11 @@
                       shadow:0,
                       fullWidth:"off",
                       fullScreen:"on",
-
                       spinner:"spinner4",
                       
                       stopLoop:"off",
                       stopAfterLoops:-1,
                       stopAtSlide:-1,
-
                       shuffle:"off",
                       
                       autoHeight:"off",						
