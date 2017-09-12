@@ -12,9 +12,12 @@ use Illuminate\Foundation\Auth\Access\AuthorizesResources;
 use Illuminate\Support\Facades\DB;
 use Image;
 use Auth;
+use Mail;
 
 use App\User;
 use App\Ideas;
+
+use App\Http\Controllers\MailController;
 
 
 class IdeasController extends Controller
@@ -66,24 +69,83 @@ class IdeasController extends Controller
          $idea = new Ideas;
 
         $idea->user_id = $request->user_id;
-        $idea->college = $request->college;
-        $idea->title = $request->title;
-        $idea->body = $request->body;
-        //$post->slug = str_slug($request->title, '-');
-        $title = $request->title;
-         $idea->slug =$this->slugCreator($title) ;
-
+        $idea->Name = $request->Name;
+        $idea->FatherName = $request->FatherName;
+        $idea->MotherName = $request->MotherName;
+        $idea->Education = $request->Education;
+        $idea->Email = $request->Email;
+        $idea->Address = $request->Address ;
+         $idea->City = $request->City;
+        $idea->Pincode = $request->Pincode;
+        $idea->MobileNumber = $request->MobileNumber;
+         $idea->DOB = $request->DOB;
+        $idea->Sex = $request->Sex;
+        $idea->Nationality = $request->Nationality;
+         $idea->PanNumber = $request->PanNumber;
+        $idea->AadharNumber = $request->AadharNumber;
+        $idea->VoterNumber = $request->VoterNumber;
+         $idea->DrivingNumber = $request->DrivingNumber;
+        $idea->PassportNUmber = $request->PassportNUmber;
+        $idea->Website = $request->Website;
+        $idea->TechnicalAssociation = $request->TechnicalAssociation;
+        $idea->ProfessionalActivities = $request->ProfessionalActivities;
+        $idea->SeasonalActivityMarketing = $request->SeasonalActivityMarketing;
+        $idea->SeasonalActivityIndustrial = $request->SeasonalActivityIndustrial;
+        $idea->SeasonalActivityEntrepreneurial = $request->SeasonalActivityEntrepreneurial;
+        $idea->SeasonalActivityBusiness = $request->SeasonalActivityBusiness;
+        $idea->SeasonalActivityRD = $request->SeasonalActivityRD;
+        $idea->TechnologyBusinessPreference = $request->TechnologyBusinessPreference;
+        $idea->BasicIdea = $request->BasicIdea;
+        $idea->Strengths = $request->Strengths;
+        $idea->Challenges = $request->Challenges;
+        $idea->Opportunity = $request->Opportunity;
+        $idea->Threats = $request->Threats;
+        $idea->EntityType = $request->EntityType;
+        $idea->StartDate = $request->StartDate;
+        $idea->NameOfCompany = $request->NameOfCompany;
+        $idea->CompanyAddress = $request->CompanyAddress;
+        $idea->CompanyCity = $request->CompanyCity;
+        $idea->CompanyPincode = $request->CompanyPincode;
+        $idea->DateofIncorporation = $request->DateofIncorporation;
+        $idea->SECRegistrationNo = $request->SECRegistrationNo;
+        $idea->CompanyPAN = $request->CompanyPAN;
+        $idea->CompanyTIN = $request->CompanyTIN;
+        $idea->CompanyPartners = $request->CompanyPartners;
+        $idea->CompanyContactNumber = $request->CompanyContactNumber;
+        $idea->ContactTime = $request->ContactTime;
+        $idea->Technologies = $request->Technologies;
+        $idea->TargetMarket = $request->TargetMarket;
+        $idea->IdenticalBusiness = $request->IdenticalBusiness;
+        $idea->SupportExpected = $request->SupportExpected;
+        $idea->SpaceRequired = $request->SpaceRequired;
+        $idea->NumberOfEmployees = $request->NumberOfEmployees;
+        $idea->SupportServices = $request->SupportServices;
+        $idea->FellowshipUniversityName = $request->FellowshipUniversityName;
+        $idea->FellowshipDepartmentName = $request->FellowshipDepartmentName;
+        $idea->FellowshipProfessorIncharge = $request->FellowshipProfessorIncharge;
+        $idea->FellowshipResearchAreas = $request->FellowshipResearchAreas;
+        $idea->FellowshiplicensedAnyTechnology = $request->FellowshiplicensedAnyTechnology;
+        $idea->FellowshipApplicationBasedProject = $request->FellowshipApplicationBasedProject;
+        $idea->FellowshipApplicationAreas = $request->FellowshipApplicationAreas;
+        $idea->FellowshipWorkingPrototype = $request->FellowshipWorkingPrototype;
+        $idea->FellowshipDemonstrable = $request->FellowshipDemonstrable;
+        $idea->FellowshipIsknowledge = $request->FellowshipIsknowledge;
+        $idea->FellowshipMaintainRecords = $request->FellowshipMaintainRecords;
+        $idea->Name = $request->Name;
+        $idea->Name = $request->Name;
         $idea->save();
 
       
 
-       
-        return redirect()->route('userhome')
-                        ->with('success','Idea Submitted Successfully');
+          //return redirect()->route('userhome')
+                       // ->with('success','Idea Submitted Successfully');
+
+
+        //idea_submission();
   
 
        //$users = DB::table('users')->orderby('id','desc')->first();  
-       $ideas = DB::table('ideas')->orderby('id','desc')->first();  
+       //$ideas = DB::table('ideas')->orderby('id','desc')->first();  
       //Notification::send(User::all(), new NewPost($ideas));
      }
        // $users->notify(new NewPost($posts));

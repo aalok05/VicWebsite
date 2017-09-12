@@ -1,0 +1,69 @@
+/* Add here all your CSS customizations */
+/* Add here all your CSS customizations */
+.m20 {
+    margin-top: 20px;
+}
+
+.m50 {
+    margin-top: 50px;
+}
+
+.m100 {
+    margin-top: 100px;
+}
+
+.text-o {
+    color: orange !important;
+}
+
+
+
+.text-s {
+    color: #00A3BF !important;
+}
+
+.text-g {
+    color: greenyellow !important;
+}
+
+.text-bo {
+    background-color: orange !important;
+}
+
+.text-bs {
+    background-color: #00A3BF !important;
+}
+
+.text-bg {
+    background-color: greenyellow !important;
+}
+
+
+.overridemargin {
+    margin-top: 6px !important;
+}
+
+#footer {
+    background: #0088cc !important;
+    border-top: 4px solid #0088cc !important;
+    font-size: 0.9em;
+    margin-top: 50px;
+    padding: 70px 0 0;
+    position: relative;
+    clear: both;
+}
+
+    #footer .footer-ribbon {
+        background: black !important;
+    }
+
+
+        #footer .footer-ribbon:before {
+            border-right-color: #0088cc !important;
+            border-left-color: #0088cc !important;
+        }
+
+    #footer .contact p {
+        margin-bottom: 10px;
+        color: white;
+    }

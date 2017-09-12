@@ -46,24 +46,53 @@
     <!-- ANIMATE -->	
 		<link rel='stylesheet' href="css/animate.min.css">
 		
-    <!-- IE Warning CSS -->
-		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie-warning.css" ><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8-fix.css" ><![endif]-->
-    
-    <!-- Magnific popup  in style.css	Owl Carousel Assets in style.css -->		
-	
-<!-- CSS end -->
+   
+	  <!-- Idea Submission Vendor CSS -->
 
-<!-- JS begin some js files in bottom of file-->
-		
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		  
-      
-		<![endif]-->
-		
-    <!-- Modernizr -->
-    <!-- <script src="js/modernizr.js"></script> -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+ 
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+ 
+    <link href="vendor/animate/animate.min.css" rel="stylesheet"/>
+ 
+    <link href="vendor/simple-line-icons/css/simple-line-icons.min.css" rel="stylesheet"/>
+ 
+    <link href="vendor/owl.carousel/owl.carousel.min.css" rel="stylesheet"/>
+ 
+    <link href="vendor/owl.carousel/owl.theme.default.min.css" rel="stylesheet"/>
+ 
+    <link href="vendor/magnific-popup/magnific-popup.min.css" rel="stylesheet"/>
+ 
+
+    <!-- Theme CSS -->
+    <link href="css/theme.css" rel="stylesheet"/>
+ 
+    <link href="css/theme-elements.css" rel="stylesheet"/>
+ 
+    <link href="css/theme-blog.css" rel="stylesheet"/>
+ 
+    <link href="css/theme-shop.css" rel="stylesheet"/>
+ 
+
+    <!-- Current Page CSS -->
+    <link href="vendor/rs-plugin/css/settings.css" rel="stylesheet"/>
+ 
+    <link href="vendor/rs-plugin/css/layers.css" rel="stylesheet"/>
+ 
+    <link href="vendor/rs-plugin/css/navigation.css" rel="stylesheet"/>
+ 
+    <link href="vendor/circle-flip-slideshow/css/component.css" rel="stylesheet"/>
+ 
+
+    <!-- Skin CSS -->
+    <link href="css/skins/default.css" rel="stylesheet"/>
+ 
+
+    <!-- Theme Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet"/>
+ 
+   <!-- Tabs Form CSS-->
+<link href="css/form.css" rel="stylesheet"/>
+
+  
 		
