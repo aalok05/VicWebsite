@@ -3,39 +3,39 @@
 @section('content')
 
 	
-	<div class="container">     
-         
-		 <div class="modal fade login" id="loginModal">
-		      <div class="modal-dialog login animated">
-    		      <div class="modal-content">
-    		         <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Login with</h4>
-                    </div>
-                    <div class="modal-body">  
-                        <div class="box">
-                             <div class="content">
-                                <div class="social">
+<div class="container">       
+ <!--Login and Registration Start-->        
+	<div class="modal fade login" id="loginModal">
+		<div class="modal-dialog login animated">
+    	    <div class="modal-content">
+    		    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Login with</h4>
+                </div>
+                 <div class="modal-body">  
+                    <div class="box">
+                        <div class="content">
+                            <div class="social">
    
-                                    <a id="google_login" class="circle google" href="{{ url('/auth/google') }}">
-                                        <i class="fa fa-google-plus fa-fw"></i>
-                                    </a>
-                                    <a id="facebook_login" class="circle facebook" href="{{ url('/auth/facebook') }}">
-                                        <i class="fa fa-facebook fa-fw"></i>
-                                    </a>
-                                </div>
-                                <div class="division">
-                                    <div class="line l"></div>
-                                      <span>or</span>
-                                    <div class="line r"></div>
-                                </div>
-                                <div class="error"></div>
+                                <a id="google_login" class="circle google" href="{{ url('/auth/google') }}">
+                                   <i class="fa fa-google-plus fa-fw"></i>
+                                </a>
+                                <a id="facebook_login" class="circle facebook" href="{{ url('/auth/facebook') }}">
+                                    <i class="fa fa-facebook fa-fw"></i>
+                                </a>
+                            </div>
+                            <div class="division">
+                                <div class="line l"></div>
+                                    <span>or</span>
+                                <div class="line r"></div>
+                            </div>
+                            <div class="error"></div>
                                 <div class="form loginBox">
                                     <form method="post" action="{{ route('login') }}" accept-charset="UTF-8">
-                                     {{ csrf_field() }}
-									<input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                                    <input class="btn btn-default btn-login" type="submit" value="Login">
+                                       {{ csrf_field() }}
+									   <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                       <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                                       <input class="btn btn-default btn-login" type="submit" value="Login" >
 									
                                     </form>
                                 </div>
@@ -43,15 +43,15 @@
                         </div>
                         <div class="box">
                             <div class="content registerBox" style="display:none;">
-                             <div class="form">
-                                <form method="post" html="{:multipart=>true}" data-remote="true" action="{{ route('register') }}" accept-charset="UTF-8">
-                                   {{ csrf_field() }}
-								<input id="name" class="form-control" type="text" placeholder="Name" name="name">
-                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                                <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
-                                <input class="btn btn-default btn-register" type="submit" value="Create account" name="commit">
-                                </form>
+                               <div class="form">
+                                   <form method="post" html="{:multipart=>true}" data-remote="true" action="{{ route('register') }}" accept-charset="UTF-8">
+                                        {{ csrf_field() }}
+								        <input id="name" class="form-control" type="text" placeholder="Name" name="name">
+                                        <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                        <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                                        <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                                        <input class="btn btn-default btn-register" type="submit" value="Create account"  name="commit">
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -67,14 +67,12 @@
                              <a href="javascript: showLoginForm();">Login</a>
                         </div>
                     </div>        
-    		      </div>
-		      </div>
-		  </div>
+    		    </div>
+		    </div>
+		</div>
     </div>
 	
-	
-		
-
+	<!--Login and Registration Ends-->
 		<div id="wrap" class="boxed ">
 			<div class="grey-bg"> <!-- Grey BG  -->	
 				
@@ -112,7 +110,7 @@
 								<div id="main-menu">
 								  <div class="navbar navbar-default" role="navigation">
 
-										<!-- MAIN MENU LIST -->
+			<!-- MAIN MENU LIST -->
 									<nav class="collapse collapsing navbar-collapse right-1024">
 									  <ul class="nav navbar-nav">
                       @if (Auth::guest())
@@ -236,7 +234,6 @@
 <br>
 <br>
 
-
 		 <section id="idea-form">
         <div class="container">
         
@@ -304,9 +301,14 @@
                         </ul>
                     </div>
 
-                    <form role="form" class="form-horizontal" id="" name="idea-registration" action="" method="POST" enctype="multipart/form-data">
+                    <form role="form" class="form-horizontal" id="" name="idea-registration" action="{{route('ideas.store')}}" method="POST" enctype="multipart/form-data">
+                    {{ csrf_field() }}
                         <div class="tab-content">
 
+                       @if(Auth::guest())
+                       @else
+                        <input type="hidden"  name="user_id" value= {{ Auth::user()->id }} >
+                        @endif
                             <div class="tab-pane active" role="tabpanel" id="step1">
                                 <div class="step1">
                                     <!-- ****************************** Personal Information ******************************* -->
